@@ -56,8 +56,8 @@ int main() {
 			int node1, node2, bw;
 			cin >> node1 >> node2 >> bw;
 			bandwidth[node1-1][node2-1] += bw;
-            bandwidth[node2-1][node1-1] += bw;
-        }
+            		bandwidth[node2-1][node1-1] += bw;
+        	}
 		cout<<"Network "<<f<<"\nThe bandwidth is "<<maxFlow(src-1, dest-1)<<".\n\n";
 	}
 	return 0;
