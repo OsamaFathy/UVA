@@ -13,7 +13,7 @@ int path[kMax];
 bool vis[kMax];
 int n;
 
-int *findPath(int cur, int curLen, int target, int maxBW) {
+int findPath(int cur, int curLen, int target, int maxBW) {
 	path[curLen] = cur;
 	vis[cur] = true;
 	if(cur == target)  return maxBW;
